@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFERTA CERTA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            background-color: #2B4C7E;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        .logo-header {
+            max-width: 100px; 
+        }
+        h1 {
+            margin: 0; 
+            flex-grow: 1; 
+            text-align: center; 
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .commerce-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .commerce-list li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .commerce-list h2 {
+            margin: 0 0 10px;
+            display: flex;
+            align-items: center;
+        }
+        .commerce-list img.logo {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .commerce-list p {
+            margin: 5px 0;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-images img {
+            width: 25%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transform: translateY(-50%);
+        }
+        .carousel-button.left {
+            left: 10px;
+        }
+        .carousel-button.right {
+            right: 10px;
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+        .button-container a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #2B4C7E;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button-container a:hover {
+            background-color: #1D3A6C;
+        }
+        .contact-info {
+            background-color: #2B4C7E;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #2B4C7E;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2B4C7E;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #1D3A6C;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo Oferta Certa.png" alt="Logo do Site" class="logo-header">
+        <h1>OFERTA CERTA</h1>
+    </header>
+    
+    <div class="container">
+        <section>
+            <ul class="commerce-list">
+                <li>
+                    <img src="logo akki.png" alt="Logo AKKI Atacadista" class="logo">
+                    <div>
+                        <h2>AKKI Atacadista</h2>
+                        <p><strong>Endereço:</strong> Estr. do Alvarenga, 2065 - Balneário Mar Paulista, São Paulo - SP, 04467-000</p>
+                        <p><strong>Telefone:</strong> (11) 3053-7008</p>
+                        <p><strong>Horário de Funcionamento:</strong> Segunda a Sábado, das 8h às 18h</p>
+                        <p>O AKKI ATACADISTA, fundado em 2010 em São Paulo, oferece produtos alimentícios e de utilidades domésticas com preços baixos no formato cash & carry. Atende tanto empreendedores quanto consumidores finais e está em expansão.</p>
+                        
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="Akki foto 1.jpg" alt="Imagem 1">
+                                <img src="Akki foto 2.jpeg" alt="Imagem 2">
+                                <img src="Akki foto 3.jpg" alt="Imagem 3">
+                                <img src="Akki foto 4.webp" alt="Imagem 4">
+                            </div>
+                            <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://akki.com.br/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="logo public.png" alt="Logo Public Super Atacados" class="logo">
+                    <div>
+                        <h2>Public Super Atacados</h2>
+                        <p><strong>Endereço:</strong> Estr. do Alvarenga, 2820 - 1 - Balneário São Francisco, São Paulo - SP, 04474-340</p>
+                        <p><strong>Telefone:</strong> (11) 5560-0939</p>
+                        <p><strong>Horário de Funcionamento:</strong> Segunda a Sábado, das 7h às 20h</p>
+                        <p>O Public Super Atacados é conhecido pela ampla variedade de produtos e preços competitivos, ideal para compras em grandes quantidades.</p>
+                        
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="Public foto 1.PNG" alt="Imagem 1">
+                                <img src="Public foto 2.PNG" alt="Imagem 2">
+                                <img src="Public foto 3.jpg" alt="Imagem 3">
+                                <img src="Public foto 4.png" alt="Imagem 4">
+                            </div>
+                            <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://public.com.br/sale" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="logo ricoy.png" alt="Logo Ricoy Supermercados" class="logo">
+                    <div>
+                        <h2>Ricoy Supermercados</h2>
+                        <p><strong>Endereço:</strong> Estr. do Alvarenga, 1694 - Balneário Mar Paulista, São Paulo - SP, 04463-020</p>
+                        <p><strong>Telefone:</strong> (11) 4010-2630</p>
+                        <p><strong>Horário de Funcionamento:</strong> Segunda a Domingo, das 8h às 22h</p>
+                        <p>O Ricoy Supermercados oferece uma ampla seleção de produtos alimentícios e não alimentícios, com atendimento de qualidade e serviços variados.</p>
+                        
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="Ricoy foto 1.PNG" alt="Imagem 1">
+                                <img src="Ricoy foto 2.PNG" alt="Imagem 2">
+                                <img src="Ricoy foto 3.PNG" alt="Imagem 3">
+                                <img src="Ricoy foto 4.PNG" alt="Imagem 4">
+                            </div>
+                            <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://www.associacaoricoy.com.br/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="Logo barbosa.png" alt="Logo Barbosa Supermercados" class="logo">
+                    <div>
+                        <h2>Barbosa Supermercados</h2>
+                        <p><strong>Endereço:</strong> R. Miguel Maurício Ramalho, 83 - Jardim da Pedreira, São Paulo - SP, 04462-040</p>
+                        <p><strong>Telefone:</strong> (11) 5613-1580</p>
+                        <p><strong>Horário de Funcionamento:</strong> Aberto 24 horas</p>
+                        <p>O Barbosa Supermercados oferece qualidade e confiança com uma ampla seleção de produtos frescos e atendimento personalizado.</p>
+                        
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="Barbosa foto 1.jpg" alt="Imagem 1">
+                                <img src="Barbosa foto 2.jfif" alt="Imagem 2">
+                                <img src="Barbosa foto 3.jpg" alt="Imagem 3">
+                                <img src="Barbosa foto 4.jpg" alt="Imagem 4">
+                            </div>
+                            <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://www.barbosasupermercados.com.br/" target="_blank">Saiba Mais</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="form-container">
+            <h2>Adicione Seu Estabelecimento</h2>
+            <form action="enviar_formulario.php" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome do Estabelecimento:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição do Estabelecimento:</label>
+                    <textarea id="descricao" name="descricao" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="horario">Horário de Funcionamento:</label>
+                    <input type="text" id="horario" name="horario" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar Estabelecimento</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contato</h2>
+            <p><strong>Email:</strong> ofertacerta00@gmail.com</p>
+            <p><strong>Telefone:</strong> (11) 1234-5678</p>
+            <p><strong>Endereço:</strong> R. José Viêra Martins, 270 - Jardim Itapura, São Paulo - SP, 04466--025</p>
+            <p>Para dúvidas, sugestões ou reclamações, entre em contato conosco!</p>
+        </section>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+
+        function moveSlide(step) {
+            const carousels = document.querySelectorAll('.carousel-images');
+            carousels.forEach(carousel => {
+                const slides = carousel.children;
+                const totalSlides = slides.length;
+                const slidesToShow = 4;
+                
+                currentSlideIndex += step;
+                if (currentSlideIndex >= totalSlides / slidesToShow) {
+                    currentSlideIndex = 0;
+                } else if (currentSlideIndex < 0) {
+                    currentSlideIndex = Math.ceil(totalSlides / slidesToShow) - 1;
+                }
+                
+                const offset = -currentSlideIndex * 100;
+                carousel.style.transform = `translateX(${offset}%)`;
+            });
+        }
+    </script>
+</body>
+</html>
